@@ -13,15 +13,15 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Users {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-
     @Column(unique = true)
     private String email;
+    private String password;
 
     @OneToMany(mappedBy = "users", cascade = CascadeType.ALL)
     private List<Account> accounts;

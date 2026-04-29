@@ -25,6 +25,6 @@ public class Account {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private Users users;
+    private User user;
 
 }
