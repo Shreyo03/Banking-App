@@ -15,6 +15,5 @@ public class AccountResponse {
     private Long id;
     private int accountNumber;
     private BigDecimal balance;
-
     private Long userId;
 }

@@ -13,6 +13,5 @@ import java.math.BigDecimal;
 public class CreateAccountRequest {
     private int accountNumber;
     private BigDecimal balance;
-
     private Long userId;
 }
